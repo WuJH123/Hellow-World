@@ -1,0 +1,31 @@
+:root {
+  --shell: #e4e8ec;
+  --surface: #f1f3f5;
+  --surface-2: #f8fafc;
+  --surface-3: #e7ebef;
+  --text: #0a1f3d;
+  --text-2: #152a4a;
+  --text-mute: #4a5a78;
+  --text-faint: #8595ad;
+  --rule: #c6cdd6;
+  --accent: #1e3a8a;
+  --accent-soft: rgba(30, 58, 138, 0.1);
+  --accent-glow: rgba(30, 58, 138, 0.3);
+  --ink-soft: rgba(10, 31, 61, 0.05);
+  --ink-faint: rgba(10, 31, 61, 0.035);
+  --ink-track: rgba(10, 31, 61, 0.12);
+  --accent-line: rgba(30, 58, 138, 0.42);
+  --accent-wash: rgba(30, 58, 138, 0.08);
+  --accent-stripe: rgba(30, 58, 138, 0.12);
+  --accent-border: rgba(30, 58, 138, 0.22);
+  --font-display-cn: "Noto Serif SC", "Source Han Serif SC", serif;
+  --font-display-en: "Playfair Display", "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", "Manrope", "Noto Sans SC", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+  --r-card: 6px;
+  --r-stage: 0;
+  --stage-pad-x: 130px;
+  --stage-pad-y: 92px;
+  --card-shadow: 0 1px 0 var(--rule), 0 18px 48px rgba(10, 31, 61, 0.08);
+  --shadow-stage: 0 60px 160px rgba(10, 31, 61, 0.2), 0 0 0 1px rgba(10, 31, 61, 0.04);
+}

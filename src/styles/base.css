@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  color: var(--text);
+  background: var(--shell);
+  font-family: var(--font-body);
+}
+
+.shell {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(90deg, var(--ink-faint) 1px, transparent 1px),
+    linear-gradient(0deg, var(--ink-faint) 1px, transparent 1px),
+    var(--shell);
+  background-size: 48px 48px;
+}
+
+.stage-shell {
+  width: 1920px;
+  height: 1080px;
+  flex: 0 0 auto;
+  transform-origin: center;
+}
+
+.stage-frame {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-stage);
+  cursor: pointer;
+}
+
+.progress-rail {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  width: min(860px, 58vw);
+  height: 38px;
+  display: grid;
+  grid-template-columns: 38px 1fr 38px auto;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.progress-rail:hover {
+  opacity: 1;
+}
+
+.step-button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--rule);
+  color: var(--text);
+  background: var(--surface-2);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.progress-track {
+  height: 6px;
+  background: var(--ink-track);
+  cursor: pointer;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+.step-readout {
+  color: var(--text-mute);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
